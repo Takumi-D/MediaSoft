@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
     mode: "development",
-    entry: path.resolve(__dirname, "src", "index.ts"),
+    entry: path.resolve(__dirname, "src", "index.tsx"),
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "public")
+        path: path.resolve(__dirname, 'public')
     },
     devServer: {
         static: {

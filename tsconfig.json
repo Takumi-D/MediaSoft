@@ -2,11 +2,17 @@
   "compilerOptions": {
     "outDir": "",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "commonjs",
+    "target": "es2021",
     "jsx": "react",
+    "strict": true,
     "allowJs": true,
+    "types": ["node"],
+    "emitDecoratorMetadata": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "react": [ "./node_modules/@types/react" ]
+    }
   }
 }

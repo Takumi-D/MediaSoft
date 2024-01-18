@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "webpack-dev-server --config .\\webpack-config.js",
     "build": "webpack --config .\\webpack-config.js",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
     "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.56.0",
@@ -23,6 +25,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
