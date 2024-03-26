@@ -1,0 +1,49 @@
+.app{
+    display: flex;
+    flex-flow: column;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    padding: 0 20rem;
+}
+
+.layout{
+    margin: 10px auto 10px auto;
+}
+
+.mobile{
+    display: none;
+    margin: 0 auto 10px auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .app{
+        padding: 0 10rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .app{
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .app{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 320px) {
+    .app{
+        padding: 0 20px;
+    }
+}

@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  align-items: center;
+}
+
+.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: rgba(240,240,240, 1);
+  text-decoration: none;
+  color: #000000;
+
+  &:hover{
+    background: rgba(240,240,240, 0.5);
+  }
+}
+
+.wrapper-user{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name{
+  display: flex;
+  gap: 10px;
+  color: #474955;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header-img{
+  width: 60px;
+  height: 60px;
+}
+
+.d-none{
+  display: none;
+}

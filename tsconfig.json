@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
     "outDir": "",
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es2021",
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es5",
     "jsx": "react",
-    "strict": true,
     "allowJs": true,
-    "types": ["node"],
-    "emitDecoratorMetadata": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
     "paths": {
-      "react": [ "./node_modules/@types/react" ]
+      "@store/*": ["./store/*"],
+      "@type/*": ["./type/*"],
+      "@images/*": ["./images/*"],
+      "react": [ "./node_modules/@types/react" ],
     }
   }
 }
