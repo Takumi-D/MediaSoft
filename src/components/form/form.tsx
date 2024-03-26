@@ -48,7 +48,7 @@ function Form({ navigate }) {
     }, 60000);
 
     reset();
-    navigate("/");
+    navigate("/MediaSoft");
   };
 
   const arrayControllers = dateControllers?.map((item: any) => {

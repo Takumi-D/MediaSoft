@@ -25,7 +25,7 @@ function useTracksScreenWidth() {
   return width;
 }
 
-export function App() {
+function App() {
   const width = useTracksScreenWidth();
   console.log(width);
 
@@ -37,7 +37,7 @@ export function App() {
       <Navbar />
       <Routes>
         <Route
-          path="/"
+          path="/MediaSoft"
           element={
             <>
               <Tile />
@@ -46,7 +46,7 @@ export function App() {
           }
         />
         <Route
-          path="/:id"
+          path="/MediaSoft/:id"
           element={
             <>
               <Tile />

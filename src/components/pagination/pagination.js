@@ -9,7 +9,7 @@ function Pagination(_a) {
     var numberOfPages = useSelector(numberOfPagesSelector);
     var loading = useSelector(loadingSelector);
     var _loop_1 = function (i) {
-        amountPage.push(React.createElement("li", { "aria-hidden": "true", key: i, onClick: function () { return navigate("/".concat(i)); }, className: "".concat(numberOfPages === i ? "last-page" : "page").concat(+parameters.id === i ? " active" : "") }, i));
+        amountPage.push(React.createElement("li", { "aria-hidden": "true", key: i, onClick: function () { return navigate("/MediaSoft/".concat(i)); }, className: "".concat(numberOfPages === i ? "last-page" : "page").concat(+parameters.id === i ? " active" : "") }, i));
     };
     for (var i = 1; i <= numberOfPages; i += 1) {
         _loop_1(i);
@@ -27,7 +27,7 @@ function Pagination(_a) {
                         // empty
                     }
                     else
-                        navigate("/".concat(+parameters.id - 1));
+                        navigate("/MediaSoft/".concat(+parameters.id - 1));
                 }, className: "back" }, "\u041D\u0430\u0437\u0430\u0434"),
             React.createElement("div", { className: "wrapper-page" }, amountPage),
             React.createElement("li", { "aria-hidden": "true", onClick: function () {
@@ -38,7 +38,7 @@ function Pagination(_a) {
                         // empty
                     }
                     else
-                        navigate("/".concat(+parameters.id + 1));
+                        navigate("/MediaSoft/".concat(+parameters.id + 1));
                 }, className: "next" }, "\u0414\u0430\u043B\u0435\u0435"))));
 }
 export default urlParameters(Pagination);

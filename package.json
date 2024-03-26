@@ -1,12 +1,13 @@
 {
   "name": "medisoft",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "homepage": "https://Takumi-D.github.io/MediaSoft",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --config webpack-dev.js",
     "build": "webpack --config webpack-prod.js",
-    "lint": "eslint --ext .ts,.tsx --fix",
+    "lint": "eslint --ext .ts,.tsx src --fix",
     "prepare": "husky install"
   },
   "keywords": [],

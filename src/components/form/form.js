@@ -50,7 +50,7 @@ function Form(_a) {
             dispatch(deleteForm());
         }, 60000);
         reset();
-        navigate("/");
+        navigate("/MediaSoft");
     };
     var arrayControllers = dateControllers === null || dateControllers === void 0 ? void 0 : dateControllers.map(function (item) {
         return (React.createElement("div", { className: "mb-3", key: item.id },

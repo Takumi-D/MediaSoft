@@ -19,7 +19,7 @@ function Pagination({ navigate, parameters }) {
       <li
         aria-hidden="true"
         key={i}
-        onClick={() => navigate(`/${i}`)}
+        onClick={() => navigate(`/MediaSoft/${i}`)}
         className={`${numberOfPages === i ? "last-page" : "page"}${
           +parameters.id === i ? " active" : ""
         }`}
@@ -43,7 +43,7 @@ function Pagination({ navigate, parameters }) {
               // empty
             } else if (+parameters.id <= 1) {
               // empty
-            } else navigate(`/${+parameters.id - 1}`);
+            } else navigate(`/MediaSoft/${+parameters.id - 1}`);
           }}
           className="back"
         >
@@ -59,7 +59,7 @@ function Pagination({ navigate, parameters }) {
               navigate("2");
             } else if (+parameters.id >= numberOfPages) {
               // empty
-            } else navigate(`/${+parameters.id + 1}`);
+            } else navigate(`/MediaSoft/${+parameters.id + 1}`);
           }}
           className="next"
         >
