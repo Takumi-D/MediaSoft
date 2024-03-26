@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack serve --config webpack-dev.js",
     "build": "webpack --config webpack-prod.js",
-    "lint": "eslint --ext .ts,.tsx src --ext webpack-common.js, webpack-prod.js, webpack-dev.js --fix",
+    "lint": "eslint --ext .ts,.tsx --fix",
     "prepare": "husky install"
   },
   "keywords": [],
